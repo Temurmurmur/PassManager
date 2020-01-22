@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Temurmurmur/PassManager/issues"
   },
-  "homepage": "https://github.com/Temurmurmur/PassManager#readme"
+  "homepage": "https://github.com/Temurmurmur/PassManager#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }
