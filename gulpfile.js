@@ -17,7 +17,10 @@ gulp.task("server", function() {
     browserSync.init({
         server: {
             baseDir: "./"
-        }
+        },
+        port: 8080,
+        open: true,
+        notify: false
     });
 });
 
@@ -32,8 +35,8 @@ gulp.task("watch", function() {
         ["./*.html", "./*.js", "./img/*.*"],
         gulp.parallel(browserSync.reload)
     );
-    watch("./src/scss/**/*.scss", function() {
-        setTimeout(gulp.parallel("sass"), 1000);
+    watch("./scss/**/*.sass", function() {
+        setTimeout(gulp.parallel("scss"), 1000);
     });
 });
 
